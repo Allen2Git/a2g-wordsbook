@@ -1,0 +1,255 @@
+so I'm Bryan App. I've been an Amazon for a little over 18 years, and I've had a variety of roles.
+I'm currently on the Amazon Go team leading retail innovation. Before that, I was leading customer
+service operations globally. I have worked on software teams. I've worked on a CZ um inventory plan,
+are essentially managing him and toward for books, music, DVD, VHS and cassette tapes back in the
+day. And then my first role of Amazon back in 2,000 was working on the community and gifting team
+and working on on website features like reviews, wish list, wedding and baby registry. And so I've
+I've seen the birth of mechanisms that Amazon and I've seen lots of examples of how it's been used.
+So today I'm going to talk about mechanisms to lead its scale, and by the end of this, I'd like you
+to be able to explain why Amazon uses mechanisms and described the components of good mechanisms.
+And I'd like to first start by telling a story. It's the story of Of the Table. Jeff Bezos
+participates in our customer connections training at C two C s, and he sits with our customer
+Service Associates and listens to phone calls from customers. And he takes those anecdotes back, and
+he works with business teams, other parts of the company to improve our processes. It's a It's a
+very valuable experience for leaders across Amazon. And around 11 or 12 years ago, Jeff was sitting
+with one of our customer service associates, Peggy, and they were getting ready to take a call from
+a customer and the item the customer's calling about a table popped up on the screen, and Peggy
+whispered to Jeff, who was sitting next to her wearing his headset. She said, The customer is going
+to be returning that table. The table is going to be damaged so they take the call. And sure enough,
+the customer wants to return the table. The tables damage, just like Peggy said. And Jeff ask her
+after the call. How did you know that she was going to be wanting to return the table and that it
+would be damaged in just that spot? And Peggy said, We get lots of calls about this table and every
+calls about damage in the same spot, and Jeff pause for a moment. They went under the next call. And
+then Jeff took that anecdote after C two c s training back too retail and back to the leadership of
+customer service. And they started talking through this example. And the initial plan from Jeff was
+to work with retail work with the business leaders to get the vendor to fix the table. And after he
+had those conversations with the retail team, the table still had the damage. You know, months went
+by and we were still getting contacts about this, and Geoff realized that he'd gotten a result that
+he deserved, because when he went to the retail team and asked them to fix the table, he was asking
+them for good intentions. And he's He's decided that good intentions don't work, because when you
+ask somebody for good intentions, you're not asking for a change. We all already have good
+intentions. And so if good intentions don't work, what works to solve the persistent problems? We
+face it Amazon, and the answer is mechanisms. Mechanisms work. Before I define a mechanism, though,
+uh, I want to tell you another another story. It's about Toyota and Toyota. 100 years ago was a silk
+manufacture today. They're known, of course, for making cars. But Toyota started as a silk
+manufacturing company, and they had silk looms. They were making silk for for lots of different
+types of customers, and one of their one of their customer's geisha and geisha were very picky about
+the quality of the silk. The silk had to be absolutely perfect, and so Toyota came up with a
+mechanism to install on the loom that would stop the loom. If any of the silk threads broke in the
+manufacturing process and they would, they would start over manufacturing that bolt of silk when
+Toyota went on to become a car manufacturer. Later, they took this concept of this mechanism into
+the car manufacturing facility, and they ran a cord through the manufacturing line and Toyota
+decided if any of their associates working on the floor, the manufacturing plant noticed a defect.
+They could pull that cord and stop the manufacturing line, and it would freeze the line in that
+state so engineers could come in and inspect it. They could fix the defect and they decided not to
+live with passing defects downstream to customers. And it was this very expensive decision that
+Toyota made because it empowered all of their associates to stop that manufacturing line. So after
+going through this this table experience, Jeff took this example from Toyota, and he said, Let's
+build the same thing and customer service Let's give our sous like Peggy this mechanism to stop
+selling products that we know were defective. We've heard from customers. We know that there's this
+persistent problem and let's empower RCS associates to stop selling products like that table and
+that will force venders or distributors packed people who are packaging the table. May be it forces
+us to fix those defects. It's a Jeff went on. To define a mechanism is a complete process. The
+mechanism is a complete process that's made up of tools adoption inspection and those things worked
+together to turn inputs and outputs and mechanisms are constructed of organizational levers. The
+idea is that this mechanism, we'll help you as a leader lead its scale and so we talk about
+organizational levers to give us leverage in this mechanism, and this is a set of things that we
+used to construct good mechanisms or complete processes, mental models, goals, organizational
+structure, policies, and rewards process steps, message, flow, metrics and resource is and these air
+roughly sorted by their leverage. So mental models I have the most leverage and examples of
+artifacts of mental models are prof excuse press releases tenets in System dynamics models like the
+virtuous cycle that's that's one of the most famous mental models that we have in the company. And
+when you're working with mental models, it's important to your design in them. To some relentlessly,
+some simplify the benchmark and when you were examining things like press releases, really spend a
+lot of time to make sure that that's clear, because that will inform the mechanisms that you create.
+A good mental model really gives you clues about where you need to build mechanisms where those
+mechanisms will be most effective. So to recap, leadership mechanisms the way Amazon defines them
+are made up of tools, adoption, inspection steps and those work together to turn inputs into the
+outputs that we expect. I I want to spend a little bit of time talking about the inspection step in
+my time of Amazon. This is what I found. There's the least amount of understanding when it comes to
+mechanisms in the importance of inspection. So what's very common? Probably most companies, but it's
+certainly Amazon is that a new problem pops up. We talk about solving that problem with a mechanism,
+and very often teams will say I created a mechanism. But what they really mean is they created a new
+report. They created a new meeting. They created a an aspect of a complete process. They usually
+created just the tool and they didn't think about inspection or adoption. Now adoption is a little
+easier for all of us to understand. We need people to come to that meeting. We need people to look
+at the report and so on. But inspection is, though, is the most misunderstood part of this complete
+process. It's really critical that we ask, Are we turning the inputs into the outputs that we
+expected, given these things working together and we need to inspect mechanisms as we're building
+them and you have to inspect him periodically after they're built and they're running in steady
+state. So the end in court example that I gave during the architecture of that in and cord
+mechanism, Jeff met with customer service leadership, the retail leaders and so on, and they worked
+on building this mechanism together. And then after that mechanism was built, we've said we need to
+periodically inspected to make sure that it's still doing what we expected it to do. And so there
+are these it very intentional inspection points. When I was leading the Amazon fresh category, we
+used to make decisions weekly in R W B R about levers. We could pull this. We really drove fresh,
+too. Profitability back in 2011 and I used our NPR. Is this inspector step for the W. P. R. We had a
+lot of W B ar metrics that were, um, they weren't they weren't quite accurate enough. There were too
+many assumptions that were made on some of our financial metrics and too many things that were
+peanut butter spread. And so we use that NPR is this very intentional inspection point for our w b
+R. So you can you can work with work with your teams to be very intentional about when you inspect
+mechanisms, how that's being done, the cadence for that put list, the mechanisms and documents like
+your envy ours and be very clear about when those mechanisms are being inspected. I think a CZ
+leaders. That's one of the most important things you can do it Amazon. When it comes to teaching
+others about mechanisms, everybody will understand that they need to go build a new tool, a report
+that they're going to build a a set of things that work together. But they might often miss the
+inspection step Crime. Thanks for telling us the story about the and in court because I think is it
+means a great story that really illustrates what you're trying to describe here. Can you talk about
+other mechanisms that you've built in your career? Help kind of describe for us, something that is
+maybe smaller but fits within a team where, you know we are doing our work every day. Yeah, well,
+let me I want to. I want to tell you about this. This team that we built and customer service, it's
+now called. It's not called the Resolutions team. Really, this team is is inspecting a lot of the
+mechanisms that other teams were building that we know will affect customers. And so, as an example,
+Prime day Two years ago we had an issue with CREDITCARD promotions that affected more customers than
+we wanted to be affected. But this defect and the team who owned that promotion, they wrote a CIA,
+we on it and they came back and they said These are the things that were going to do to build a
+mechanism to fix this problem And there's a hole every time we right to see a wee There's a set of
+corrective actions that people take in very often there. They're leaning towards building a complete
+process, whether they know it or not, they're leaning towards building a true mechanism. And so we
+built this team and customer service just to go back and audit those mechanisms that teams the
+created defects that really affected. A lot of customers were creating to make sure that they were
+closing those loops and that those were complete processes, that we were turning the inputs into the
+outputs that we expected. So that was That was something that we did across a broad set of
+mechanisms to be very intentional about that inspection. What we also did was we said, As we're
+inspecting these different mechanisms, we will teach these other teams about a complete process. And
+so that team wrote a document that they share with anybody that they're working with to inspect
+mechanisms to teach them more about this process. And there's a template that they can fill out that
+helps them walk through the different components of a complete process. So in that way we were
+building a mechanism to teach others about mechanisms like a nested mechanism. A question about
+getting people to adopt mechanisms obviously at Amazon were always looking at ways to improve and
+where we perhaps may you have a problem that needs a mechanism developed. Can you share where you
+are? Others you've worked with have been successful in ensuring that mechanisms are adopted. So,
+around two thousand 72 1,008 I was working a lot on ordering automation for the company. Today,
+almost all of the purchase orders that we placed the vendors for the various market places around
+the world are automated. But there was a time when all of that was done in Excel. All of the
+purchase orders were being uploaded to our procurement portal from Excel spreadsheets, and we really
+needed to create the algorithms necessary to automate those buying processes, and we started doing
+that. We started making the changes in forecasting and procurement systems to accommodate those
+different ordering use cases. But teams around the world were skeptical, and they were reluctant to
+take their hands off the wheel and just let the system's run in place. Those purchase orders. And so
+one of the simple things that we did was we made sure we set clear goals for all of the teams around
+the world about their automation rate. And we shared those goals with our executive leadership. And
+then we started publishing reports about adoption of the automation and and those reports we were
+celebrating the people who were adopting the automation, and we were also highlighting the teams who
+weren't adopting. So it was. It was some of both. It was a place for for teams to see their name in
+that report highlighted. If they were doing a great job of adopting and then other teams might might
+might get a little poke from the report as it was shared around. So that's an example of using
+message flow, which was one of the levers that was listed. It's an example of setting clear goals.
+And any time we met with stakeholder teams around the world, we also talked a lot about the mental
+model and inverting this human machine initiative to have machines prompt humans to do the work to
+resolve an exception instead of humans prompting machines to do the work, which is what had been
+happening when we were uploading spreadsheets to the procurement port. We had humans doing all this
+work around the world and then asking a machine to do something. We said We can flip this around and
+have humans just handle the exception cases and audit what the machines were doing. But that that
+decision making pattern, or that mental model was so something that we had to share as we were
+speaking to teams about why this automation was important and it it really it freed up those people
+to go work on things that machines don't do well, like negotiating better terms or really making
+decisions about complex supply chains and so forth. Okay, that was effective because I was not
+adopting. It is quickly and it worked when I was in retail, so that changed. Um, have you had a time
+especially as you moved into some of the newer businesses and nearer to us, where you saw a
+mechanism that wasn't working. And instead of changing for adoption, you actually had to adjust the
+mechanism to maybe highlights of the things that weren't working or that you needed to change in the
+business. Yeah, I can. Yeah, that's that's a great question, I could tell you. You know, as a
+company, we have this tool called Heartbeat, which is where we surface anecdotes from customers,
+customers contact customer service and their their information about their contacts flows into this
+this portal called a heartbeat and teams around the company. Whether you're running a business or a
+service, you Khun or operations, you could go in and tow heart beat. And you can mind these
+anecdotes. You Khun, see contact trends and lots of rich data about contacts. The problem is that
+that's a pole to get to get that data, we're asking users to go to the earl, apply these filters and
+then look through the data and to remember we're asking them to remember to do that, to have good
+intentions, to G O to go look at that tool And so one of the one of the changes that we started to
+making customer service was figuring out how to push that information to the right user at the right
+time. And that that heartbeat team is now embarking on this multi year journey to identify anecdotes
+that need to be so purposed quickly and then automatically find the right person in the company to
+surface them, too. And push those anecdotes. And it talked to them. And and that's that's an example
+of us looking at this at this tool that had some adoption and saying, We're not really getting what
+we want out of this tool called Heartbeat. We're not really We're not really getting uses
+consistently enough users around the world consistently coming to the tool and finding what they
+need and then going out and acting on it, and we'll make this change toe push that information to
+them. So you mentioned Sue ease and action items. Next time's tend to lead toward a mechanism.
+Sometimes I find in Stewie's we maybe have the wrong group cause do you have any examples of where
+the mechanism highlighted that the root cause was not correct? Um what One of my one of my one of my
+pet peeves about, uh, about Sealy's is that people misunderstand. The five wise and ah, common
+mistake is somebody will write a Segway, and they're just answer five five questions that aren't
+related to one another instead of using those five wise is a wayto to go deeper and really get to
+that root cause. And so they end up with this broad description of what happened, and it's a little
+too disorganized instead of really drilling in. And so I would encourage everybody toe when they see
+a CIA, we I go right to the five, wise to see if they've they've done that. If you use that as a way
+to drill down what is a SIOE and why isn't an effective mechanism, The seaweed is a correction of
+errors, and when ah ah big defect pops up in the company, we often ask people to fill out this
+correction of areas template and it forces. Because of its structure, it forces the user to think
+very methodically about the timeline of events, the description of the problem supply, supporting
+data and so on. So it's a way for us is a company tohave a standardized way to talk about a defect
+that's come up and you talked about mental models? Can you define what they are at Amazon? What we
+mean when we say mental model on what are some of the best things that have worked for you to get
+mental model alignment when you're kicking off? The mechanism on the mental model is a is a way of
+thinking and, you know, I mentioned that artifacts of mental models are things like press releases
+in tenants and the system dynamics models like the virtuous cycle. The virtuous cycle is, I think,
+the most powerful mental model I've seen in the company. It's a very, very simple way to describe
+how we grow our business, how we think about growing any business, that Amazon. There's the customer
+experience, which drives traffic, which Dr Sellars, which adds selection and is that is that fly
+wheel spins and we and we experienced growth that lowers our cost, which lowers prices and then that
+improves the customer experience so anybody can simply describe that to their teams. You, khun, draw
+quickly on a white board, and we use that as a way to organize ourselves and places like the W B R.
+We're just in decision making when we're talking about what metrics of the right metrics to use to
+measure a business where we might have leverage in the business. And so that's Ah, it's an example
+of a way of thinking that's it's very simple. It's very simply represented and important. Part of
+having a good mental model is relentlessly some simplifying it. So if you were reviewing tenants are
+reviewing a press release, it's really important that you simplify it so that it communicates a
+clear message to your team's about what the most important thing is. And it's. It's one of the
+reasons that oppress relief is so powerful in the company. It gets us to articulate what's important
+to customers, and it forces us to remove the clutter that could make mechanisms more complicated
+than that. Then they need to be you talked about using policies and rewards as a potential
+organization organizational lever. Can you give an example of ah mechanism where that lever helped
+either improve a mechanism or that was the missing piece for the mechanism to be fully complete? Now
+you know, we in our in our customer service or organization way monitor the quality of our contacts
+by asking customers how we did. And we used to talk about measuring negative response rate if they
+if they said we didn't help them. We showed that negative response rate to our associates, and that
+was that was a metric that we tracked. We flip that around to talk instead about positive response
+rate and when, if a customer says you solved my problem, that became that towards message became the
+way that we talked about this. And of course, when you show people metrics like that, it drives
+certain behavior and people want to see their metric increase, and you can doesn't have to be a
+policy or reward. It could just be a simple metric that people are monitoring. And if you show them
+if you show people in metric like that frequently they will do things to change the metric and they
+may not do things that that you love. And so you have to think carefully about the incentives that
+you're creating just by showing a simple metric Is it communicating the right thing to our
+associates? is that Are we thinking clearly about the a different tradeoffs that you get from a
+metric like that, but sometimes a simple metric and be a policy or connect like a policy a reward
+and have lots of leverage? Can you talk a little bit about the balance of, uh, mechanisms and
+maintaining an innovative culture and the need? Thio move away. Keeping our day one culture because
+with all the mechanisms you're describing, there's a lot of operational pieces in that. And so is
+your working in how we make sure we balance those two things, like similar. We talked about
+leadership principles and balancing those two howto mechanisms. How do we evaluate our mechanisms to
+make sure that they're not inhibiting the innovation culture? Yeah, it's, you know, the thing that
+we'd love to do is a company has been time innovating, and we can't take that time to innovative for
+if we're not operating well and so by operating well, it really gives us the time. We need toe,
+think about innovation, and that gives us any time we're creating defects for customers. Anytime
+something's not going well in the business, it pulls our focus into fixing that defect, and then
+we're not thinking about what the next product is. That customers well, love. And so creating these
+leadership mechanisms really helps us fix persistent defects and fix them in a way that they'll stay
+fixed will audit them periodically to make sure that those mechanisms continued to work. But it
+helps us. Then move on to whatever that next product is that customers will love. So you have to do
+both. How are you? Um, the mechanisms that you've described so far sound, uh, pretty simple. Um, can
+you give some examples or an example full of like a mechanism that was like Messi or hard to
+implement or hard to make better? Um, like like Callum when I can. It makes them hard. Mechanism
+design, if done well, is is simple, and so the best mechanisms are the simplest. And one of the
+things that I would encourage you all to do is if you find that you're designing a mechanism that
+seems like it's going to be too complicated. If there are a lot of components to it, try to pull it
+apart into into different mechanisms and you can have outputs from one mechanism be the inputs to
+another, and you can have. We have examples of this all over the company. Lots of very simple
+mechanisms working in concert to create something that looks very complicated when you stand back,
+you know it's this. It feels like a very complex organization. But if you really dive down into
+what's happening, places like pricing, automation or buying automation, these places where we put
+very simple mechanisms in place individually they're extremely simple things going on. But taken
+together, it's very complex, so we rely upon external, uh, partners and a lot of what we do. How do
+you think about incorporating like vendors or suppliers or advertisers into a mechanism that we
+build to ensure that both were doing things right as well as their Yeah, you can if you've got
+levers in your mechanism like message flow, our metrics or goals or even mental models. There's
+nothing wrong with sharing mental models the way that we think about solving problems for customers
+with with our vendors, with our third parties and so on. The the way Amazon puts customers first
+eyes in the decisions that that leads to is something that we can share with all these companies
+that we work with and the goals the message flow, the processes that all fall from that are
+certainly things that we can share. And we can build those key metrics into places like our extra
+nets that sellers and vendors and others were looking at. Ah, message flow is certainly incorporated
+into tools like that. So it I would think about it just the same way. The way you think about
+sharing those things internally, we can often think about sharing them externally as well.
