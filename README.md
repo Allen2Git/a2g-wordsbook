@@ -14,6 +14,7 @@ Allen 这个系统构建在 AWS 上，并且通过构建这一套系统开始了
 ---
 1. 安装本地依赖
 	pip install -r requirements.txt
+
 2. 配置主程序 a2g-wordsbook.py 中的常量，如下
 ```
 	WORD_CONFIDENCE = 1 # AWS Transcribe 生成 JSON 文件中单词的置信度
@@ -24,6 +25,7 @@ Allen 这个系统构建在 AWS 上，并且通过构建这一套系统开始了
 	YOUDAO_XML_FILENAME = "./words/youdao_xml.xml" # 有道单词本输出路径
 	YOUDAO_XML_TAGS = "a2g-wordsbook" # 有道单词本的生词分组名字
 ```
+
 3. 主程序命令行参数
 ```
 
