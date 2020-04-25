@@ -20,14 +20,20 @@ Allen 这个系统构建在 AWS 上，并且通过构建这一套系统逐渐开
 
 2. 配置主程序 a2g-wordsbook.py 中的常量，如下
 ```
-	WORD_CONFIDENCE = 1 # AWS Transcribe 生成 JSON 文件中单词的置信度
-	NEW_WORDS_FILENAME = "./words/new_words.txt" # 生词单词 TXT 文件默认路
-	BASE_WORDS_FILENAME = "./words/base_words.txt" # 熟词本默认路径
-	MEDIA_JSON_FILENAME = "./words/media-overview.json" # AWS Transcribe 生成 JSON 文件默认路径
-	DICT_FILENAME = "./dict/star_sqldb.db" # 词典的默认路径，使用 sqlite3 数据库的话，要提前转换，转换办法是运行 stardict.py
-	YOUDAO_XML_FILENAME = "./words/youdao_xml.xml" # 有道单词本输出路径
-	YOUDAO_XML_TAGS = "a2g-wordsbook" # 有道单词本的生词分组名字
+WORD_CONFIDENCE = 1 # AWS Transcribe 生成 JSON 文件中单词的置信度
+NEW_WORDS_FILENAME = "./words/new_words.txt" # 生词单词 TXT 文件默认路
+BASE_WORDS_FILENAME = "./words/base_words.txt" # 熟词本默认路径
+MEDIA_JSON_FILENAME = "./words/media-overview.json" # AWS Transcribe 生成 JSON 文件默认路径
+DICT_FILENAME = "./dict/star_sqldb.db" # 词典的默认路径，使用 sqlite3 数据库的话，要提前转换，转换办法是运行 stardict.py
+YOUDAO_XML_FILENAME = "./words/youdao_xml.xml" # 有道单词本输出路径
+YOUDAO_XML_TAGS = "a2g-wordsbook" # 有道单词本的生词分组名字
 ```
+
+2. 下载 STARDICT 词典文件
+
+请从 https://github.com/skywind3000/ECDICT 下载 ecdict.csv 文件，并转换为 SQLITE3 数据库加速查询。
+可以使用本库中 startdict.py 修改原始库名与目前库名进行转换。
+转换后的数据库请保存于 ./dict/star_sqldb.db 或者其它路径并修改 a2g-wordsbook.py 程序中 DICT_FILENAME 常量
 
 3. 主程序命令行参数
 ```
@@ -55,3 +61,10 @@ Wordsbook process the words file based on known words and output new words file
   --out-type {pure_words,trans_words,youdao_xml,ddb}
                         输出的文件类型，可以选择 pure_words-单纯每行单词的 txt 文本文件, trans_words-带有翻译的文本文件,
                         youdao_xml-可被导入的有道单词本XML文件, ddb 加入到 DynamoDB 词库当中
+
+## 参考：
+### 词典
+* 高中词典（假设我都会）： https://github.com/mahavivo/vocabulary/blob/master/vocabulary/highschool_edited.txt 
+* 特别全的词典，并且有 API 可以提供查询 https://github.com/skywind3000/ECDICT
+* 有道背单词的源 https://github.com/kajweb/dict - 每行一个单词，比较好查
+* MDICT 词典 utils https://github.com/liuyug/mdict-utils
