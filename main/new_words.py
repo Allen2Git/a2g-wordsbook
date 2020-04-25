@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020, 04, 14, 05, 40
 # @Author  : Allen Zhang
-# @File    : ~/zhangyang/workspace/a2g-wordsbook/main/new_words.py
+# @File    : ~/a2g-wordsbook/main/new_words.py
 
 # Default Constant Values:
 WORD_CONFIDENCE = 1 # Define the word of threshold AWS Transcribe predicted confidence to choose

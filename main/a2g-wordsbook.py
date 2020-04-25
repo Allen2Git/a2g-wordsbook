@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020, 04, 18, 20, 53
 # @Author  : Allen Zhang
-# @File    : ~/zhangyang/workspace/a2g-wordsbook/main/a2g-wordsbook.py
+# @File    : ~/a2g-wordsbook/main/a2g-wordsbook.py
 # @Description :
 #
 

@@ -13,7 +13,9 @@ Allen 这个系统构建在 AWS 上，并且通过构建这一套系统开始了
 ## 使用说明
 ---
 1. 安装本地依赖
+```
 	pip install -r requirements.txt
+```
 
 2. 配置主程序 a2g-wordsbook.py 中的常量，如下
 ```
