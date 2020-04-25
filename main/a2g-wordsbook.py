@@ -244,7 +244,7 @@ class WordsOutput():
 
             node_item_phonetic = youdao_xml.createElement("phonetic")
             node_item_phonetic.appendChild(youdao_xml.createTextNode(word_query['phonetic']))
-            node_item_phonetic.appendChild(youdao_xml.createCDATASection(word_query['phonetic'])
+            node_item_phonetic.appendChild(youdao_xml.createCDATASection(word_query['phonetic']))
             node_item.appendChild(node_item_phonetic)
 
             node_item_tags = youdao_xml.createElement("tags")
@@ -341,10 +341,14 @@ def wordsbook_cmd():
                            help='Output file name can be pure_words, trans_words, youdao_xml, ddb'
                            )
     cmd_parse = cmd_parse.parse_args()
+
+    print('{} is parsing...\n'.format(cmd_parse.parse_file_name))
     words_parse = WordsParse(parse_filename=cmd_parse.parse_file_name,
                              file_type=cmd_parse.parse_type
                              )
     words_parse = words_parse.words
+
+    print('{} as base words file is used\n'.format(cmd_parse.base_file))
     base_words = BaseWords(cmd_parse.base_file, cmd_parse.base_type)
     base_words = base_words.base_words
     new_words = []
@@ -356,7 +360,7 @@ def wordsbook_cmd():
             continue
 
     WordsOutput(new_words, cmd_parse.words_out_file, cmd_parse.out_type)
-
+    print('output file {} is generated\n'.format(cmd_parse.words_out_file))
 
 if __name__ == '__main__':
     wordsbook_cmd()
