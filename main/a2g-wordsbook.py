@@ -239,12 +239,12 @@ class WordsOutput():
             node_item.appendChild(node_item_word)
 
             node_item_trans = youdao_xml.createElement("trans")
-            node_item_trans.appendChild(youdao_xml.createCDATASection(word_query['translation']))
+            node_item_trans.appendChild(youdao_xml.createTextNode(word_query['translation']))
             node_item.appendChild(node_item_trans)
 
             node_item_phonetic = youdao_xml.createElement("phonetic")
-            #node_item_phonetic.appendChild(youdao_xml.createTextNode(word_query['phonetic']))
-            node_item_phonetic.appendChild(youdao_xml.createCDATASection(word_query['phonetic']))
+            node_item_phonetic.appendChild(youdao_xml.createTextNode(word_query['phonetic']))
+            node_item_phonetic.appendChild(youdao_xml.createCDATASection(word_query['phonetic'])
             node_item.appendChild(node_item_phonetic)
 
             node_item_tags = youdao_xml.createElement("tags")
