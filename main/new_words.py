@@ -3,6 +3,7 @@
 # @Time    : 2020, 04, 14, 05, 40
 # @Author  : Allen Zhang
 # @File    : ~/a2g-wordsbook/main/new_words.py
+# Usage: 
 
 # Default Constant Values:
 WORD_CONFIDENCE = 1 # Define the word of threshold AWS Transcribe predicted confidence to choose

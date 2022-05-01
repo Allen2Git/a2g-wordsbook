@@ -5,7 +5,33 @@
 # @File    : ~/a2g-wordsbook/main/a2g-wordsbook.py
 # @Description :
 #
+"""
+```
 
+usage: a2g-wordsbook.py [-h] [-i 输入文件名]
+                        [--parse-type {txt,transcribe_json,pdf,word}]
+                        [-b 熟词库文件名] [--base-type {txt,ddb}]
+                        [-o 输出生词文件名]
+                        [--out-type {pure_words,trans_words,youdao_xml,ddb}]
+
+Wordsbook process the words file based on known words and output new words file
+
+参数说明:
+  -h, --help            显示帮助信息并退出
+  -i PARSE_FILE_NAME, --parse-file PARSE_FILE_NAME
+                        要处理的学习文件
+  --parse-type {txt,transcribe_json,pdf,word}
+                        支持的文件类型选择，可以是 txt-纯文本，transcribe-AWS Transcribe 翻译生成 JSON, pdf-PDF文件
+  -b BASE_FILE, --base-file BASE_FILE
+                        自己的熟词库文件，格式是每行一个单词
+  --base-type {txt,ddb}
+                        熟词库文件类型，可以是txt-纯文本，或者是 DynamoDB (开发中)
+  -o WORDS_OUT_FILE, --words-out WORDS_OUT_FILE
+                        输出的文件名
+  --out-type {pure_words,trans_words,youdao_xml,ddb}
+                        输出的文件类型，可以选择 pure_words-单纯每行单词的 txt 文本文件, trans_words-带有翻译的文本文件,
+                        youdao_xml-可被导入的有道单词本XML文件, ddb 加入到 DynamoDB 词库当中
+"""
 
 # Default Constant Values:
 import argparse  # main function use this module to be a commandline
@@ -14,6 +40,7 @@ from os.path import dirname, join
 import os
 import json
 import re
+from io import BytesIO
 from stardict import StarDict
 
 # For parse PDF file:
@@ -24,6 +51,10 @@ from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfdevice import PDFDevice
 from pdfminer.pdfpage import PDFPage
+
+# For parse WORD file:
+from docx import Document
+
 
 # For create and parse XML
 import xml.dom.minidom
@@ -71,6 +102,8 @@ class WordsParse():
             self.pdf_parse()
         elif self.file_type == "transcribe_json":
             self.transcribe_json_parse()
+        elif self.file_type == "word":
+            self.word_parse()
         else:
             # TODO throw exception
             pass
@@ -162,6 +195,25 @@ class WordsParse():
                     # add new word to new_words list
                     self.words.append(new_word)
 
+    def word_parse(self):
+        with open(self.parse_filepath, "rb") as word_file:
+            source_stream = BytesIO(word_file.read())
+            document = Document(source_stream)
+            word_text = []
+            for para in document.paragraphs:
+                word_text.append(para.text)
+            word_text = " ".join(word_text)
+            word_reg = re.compile(r'\w+')
+
+            source_stream.close()
+
+            word_file_words = word_reg.findall(word_text)
+            for item in word_file_words:
+                new_word = str.lower(item)
+                new_word = self.is_new_word(new_word)
+                if (new_word and (new_word not in self.words)):
+                    # add new word to new_words list
+                    self.words.append(new_word)
 
 # class Words Output used to output new words to different type like pure_words, \
 # trans_words(word with translation), youdao_xml
@@ -312,16 +364,16 @@ def wordsbook_cmd():
     cmd_parse = argparse.ArgumentParser(
         description="Wordsbook process the words file and output new words file"
     )
-    cmd_parse.add_argument('-i', '--parse-file', type=str,
+    cmd_parse.add_argument('-i', '--parse-file', type=str, default='input_file.txt',
                            action='store', dest='parse_file_name',
                            help='File name to parse'
                            )
     cmd_parse.add_argument('--parse-type', type=str,
                            action='store', dest='parse_type',
-                           default="txt", choices=['txt', 'transcribe_json', 'pdf'],
-                           help='Input file parse type, can be txt, transcribe_json, pdf'
+                           default="txt", choices=['txt', 'transcribe_json', 'pdf', 'word'],
+                           help='Input file parse type, can be txt, transcribe_json, pdf,word'
                            )
-    cmd_parse.add_argument('-b', '--base-file', type=str,
+    cmd_parse.add_argument('-b', '--base-file', type=str,default='base_words.txt',
                            action='store', dest='base_file',
                            help='Lexicon file name'
                            )
@@ -330,12 +382,12 @@ def wordsbook_cmd():
                            default="txt", choices=['txt',  'ddb'],
                            help='Base file can be txt or from ddb'
                            )
-    cmd_parse.add_argument('-o', '--words-out', type=str,
+    cmd_parse.add_argument('-o', '--words-out', type=str, default='new_words.txt',
                            action='store', dest='words_out_file',
                            help='Output file name'
                            )
     cmd_parse.add_argument('--out-type', action='store', type=str,
-                           dest='out_type',
+                           dest='out_type', default="pure_words",
                            choices=['pure_words', 'trans_words',
                                     'youdao_xml', 'ddb'],
                            help='Output file name can be pure_words, trans_words, youdao_xml, ddb'
